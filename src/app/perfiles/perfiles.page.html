@@ -1,0 +1,31 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>perfiles</ion-title>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/tabs/tab1"></ion-back-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div *ngIf="personaje">
+    <img src="{{personaje.image}}" />
+    <ion-card>
+      <ion-card-header>
+        <ion-card-subtitle>Datos del actor</ion-card-subtitle>
+        <ion-card-title>{{personaje.name}}</ion-card-title>
+      </ion-card-header>
+      <ion-card-content >
+        <label>Rol en la serie: {{personaje.role}}</label>
+        <br>
+        <label>Twitter: {{redes.twitter}}</label>
+        <br>
+        <label>Facebook: {{redes.facebook}}</label>
+        <br>
+        <label>linkedin: {{redes.linkedin}}</label>
+        
+      </ion-card-content>
+    </ion-card>
+  </div>
+
+</ion-content>

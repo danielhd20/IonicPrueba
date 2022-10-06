@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { HttpClient } from "@angular/common/http";
 
 @Component({
   selector: 'app-tab1',
@@ -7,6 +8,26 @@ import { Component } from '@angular/core';
 })
 export class Tab1Page {
 
-  constructor() {}
+  Pprinciales = [];
+  Psecundarios = [];
+  personajes = [];
 
+  
+  constructor(
+    private http: HttpClient
+  ) {}
+
+  async ngOnInit() {
+    this.http.get<any>("https://mr-robot-express-api.herokuapp.com/characters/")
+    .subscribe(res => {
+
+      this.Pprinciales = res[0].main;
+      this.Psecundarios = res[0].recurring;
+      this.personajes = this.personajes.concat(this.Pprinciales)
+      this.personajes = this.personajes.concat(this.Psecundarios)
+         //console.log(this.personajes)
+    })
+  }
+ 
 }
+
