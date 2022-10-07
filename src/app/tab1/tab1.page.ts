@@ -23,9 +23,8 @@ export class Tab1Page {
 
       this.Pprinciales = res[0].main;
       this.Psecundarios = res[0].recurring;
-      this.personajes = this.personajes.concat(this.Pprinciales)
-      this.personajes = this.personajes.concat(this.Psecundarios)
-         //console.log(this.personajes)
+      this.personajes = this.personajes.concat(this.Pprinciales, this.Psecundarios)
+      //console.log(this.personajes)
     })
   }
  

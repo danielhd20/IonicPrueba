@@ -2,7 +2,7 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
     <ion-title>
-      Actores de Mr Robot
+    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4b/Mr._Robot_Logo.svg/2560px-Mr._Robot_Logo.svg.png"  style="width:50%" class="ion-align-items-center">
     </ion-title>
   </ion-toolbar>
 </ion-header>
@@ -14,7 +14,7 @@
         <img src="{{personaje.image}}">
       </ion-avatar>
       <ion-label>{{personaje.name}}</ion-label>
-      <ion-button fill="outline" slot="end" [routerLink]="['/perfiles/' + personaje.id]">Ver perfil</ion-button>
+      <ion-button fill="outline" color="danger" slot="end" [routerLink]="['/perfiles/' + personaje.id]">Ver perfil</ion-button>
     </ion-item>
   </ion-card>
 </ion-content>

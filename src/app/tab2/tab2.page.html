@@ -1,17 +1,53 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
     <ion-title>
-      Tab 2
+    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4b/Mr._Robot_Logo.svg/2560px-Mr._Robot_Logo.svg.png"  style="width:50%" class="ion-align-items-center">
     </ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Tab 2</ion-title>
-    </ion-toolbar>
-  </ion-header>
-
-  <app-explore-container name="Tab 2 page"></app-explore-container>
+  <ion-card>
+    <ion-card-header class="ion-text-center">
+      <ion-card-subtitle>Info</ion-card-subtitle>
+      <ion-card-title>Temporadas</ion-card-title>
+    </ion-card-header>
+    <ion-card-content >
+      <label>Temporada 1: </label>
+      <br>
+      <label>Nro Episodios: {{temporadas.season_1.episodes}}</label> 
+      <br>
+      <label>Primera Emision: {{temporadas.season_1.first_aired}}</label>
+      <br>
+      <label>Ultima Emision: {{temporadas.season_1.last_aired}}</label>
+      <br>
+      <br>
+      <label>Temporada 2: </label>
+      <br>
+      <label>Nro Episodios: {{temporadas.season_2.episodes}}</label> 
+      <br>
+      <label>Primera Emision: {{temporadas.season_2.first_aired}}</label>
+      <br>
+      <label>Ultima Emision: {{temporadas.season_2.last_aired}}</label>
+      <br>
+      <br>
+      <label>Temporada 3: </label>
+      <br>
+      <label>Nro Episodios: {{temporadas.season_3.episodes}}</label> 
+      <br>
+      <label>Primera Emision: {{temporadas.season_3.first_aired}}</label>
+      <br>
+      <label>Ultima Emision: {{temporadas.season_3.last_aired}}</label>
+      <br>
+      <br>
+      <label>Temporada 4: </label>
+      <br>
+      <label>Nro Episodios: {{temporadas.season_4.episodes}}</label> 
+      <br>
+      <label>Primera Emision: {{temporadas.season_4.first_aired}}</label>
+      <br>
+      <label>Ultima Emision: {{temporadas.season_4.last_aired}}</label>
+      <br>
+    </ion-card-content>
+  </ion-card>
 </ion-content>
