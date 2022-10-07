@@ -12,7 +12,7 @@ export class Tab2Page {
   Aux2 = [];
   Aux3 = [];
   Aux4 = [];
-  temporadas = [];
+  temporadas;
 
   
   constructor(

@@ -10,7 +10,7 @@
   <ion-card>
     <ion-item *ngFor = "let episodio of episodios">
       <ion-label>{{episodio.title}}</ion-label>
-      <ion-button fill="outline" color="danger" slot="end" [routerLink]="['/perfiles/' + personaje.id]">Ver detalles</ion-button>
+      <ion-button fill="outline" color="danger" slot="end" [routerLink]="['/detallesep/' + episodio.no_all]">Ver detalles</ion-button>
     </ion-item>
   </ion-card>
 </ion-content>

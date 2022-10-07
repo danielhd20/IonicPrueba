@@ -19,6 +19,7 @@ export class Tab3Page {
 
       this.episodios=res[0].all;
       console.log(this.episodios)
+      console.log(res);
     })
   }
  

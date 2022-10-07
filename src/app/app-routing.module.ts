@@ -9,6 +9,10 @@ const routes: Routes = [
   {
     path: 'perfiles/:id',
     loadChildren: () => import('./perfiles/perfiles.module').then( m => m.PerfilesPageModule)
+  },
+  {
+    path: 'detallesep/:id',
+    loadChildren: () => import('./detallesep/detallesep.module').then( m => m.DetallesepPageModule)
   }
 ];
 @NgModule({

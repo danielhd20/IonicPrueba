@@ -1,0 +1,33 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Detalle</ion-title>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/tabs/tab3"></ion-back-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div *ngIf="episodio">
+    <ion-card>
+      <ion-card-header class="ion-text-center">
+        <ion-card-subtitle>Detalles del episodio</ion-card-subtitle>
+        <ion-card-title>{{episodio.title}}</ion-card-title>
+      </ion-card-header>
+      <ion-card-content >
+        <label>Dirigido por: {{episodio.directed_by}}</label>
+        <br>
+        <br>
+        <label>Escrito por: {{episodio.written_by}}</label>
+        <br>
+        <br>
+        <label>Fecha de lanzamiento: {{episodio.air_date}}</label>
+        <br>
+        <br>
+        <label>Trama: <br>{{episodio.plot}}</label>
+        
+      </ion-card-content>
+    </ion-card>
+  </div>
+
+</ion-content>
